@@ -1,0 +1,143 @@
+/* Các kiểu dáng toàn cục cho toàn bộ trang */
+
+/* Thiết lập font chữ mặc định và đặt lại margin và padding để có kiểu dáng nhất quán */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kiểu dáng cho phần tiêu đề */
+
+/* Thiết lập màu nền, padding, màu chữ và căn giữa văn bản trong phần tiêu đề */
+header {
+    background-color: #4CAF50;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Kiểu dáng cho tiêu đề chính (h1) bên trong phần tiêu đề */
+
+/* Tăng kích thước font chữ, thêm margin ở phía dưới và thiết lập màu chữ cho tiêu đề chính */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Kiểu dáng cho thanh điều hướng */
+
+/* Xóa kiểu dáng danh sách mặc định cho thanh điều hướng */
+nav ul {
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* Kiểu dáng cho các mục danh sách trong thanh điều hướng */
+
+/* Hiển thị các mục danh sách theo hàng ngang, thêm margin phải và thiết lập kiểu dáng cho các liên kết trong các mục danh sách */
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* khi đặt chuột vào liên kết thì đổi màu /
+nav ul li:hover {
+background-color: #2980b9;
+/ Màu nền khi hover */
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Kiểu dáng cho nội dung chính */
+
+/* Thêm padding vào khu vực nội dung chính */
+main {
+    padding: 20px;
+}
+
+/* Kiểu dáng cho các liên kết trong khu vực nội dung chính */
+
+/* Thiết lập màu và gạch chân cho các liên kết trong khu vực nội dung chính */
+main a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Kiểu dáng cho hình ảnh trong khu vực nội dung chính */
+
+/* Thêm margin, viền và bo góc cho hình ảnh để trình bày tốt hơn */
+main img {
+    margin: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
+
+/* Kiểu dáng cho phần chân trang */
+
+/* Thiết lập màu nền, padding, màu chữ và căn giữa văn bản trong phần chân trang */
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* thay doi hien thi link dang dung o trang web nao */
+.current {
+    background-color: #2980b9;
+    text-decoration: none;
+    color: black;
+}
+
+/* Kiểu dáng cho hình ảnh khu vực hàng xóm */
+
+.neighborhoodimgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.neighborhoodimgs img {
+    flex: 40%;
+    /* Hai hình ảnh mỗi hàng /
+max-width: 50%;
+/ Đảm bảo hai hình ảnh vừa với mỗi hàng */
+}
+
+/* Kiểu dáng cho hình ảnh trong khu vực công viên */
+
+.parksimgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parksimgs img {
+    flex: 1 1 auto;
+    /* Hình ảnh có thể co giãn để lấp đầy không gian trống /
+margin: 5px;
+/ Khoảng cách giữa các hình ảnh */
+}
+
+/* Kiểu dáng cho nút bỏ qua */
+
+.skip {
+    padding-top: 20px;
+    background-color: #4CAF50;
+}
+
+.skip a {
+    display: inline;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+}
+
+#skiplink:hover {
+    background-color: #2980b9;
+}
